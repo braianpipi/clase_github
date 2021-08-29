@@ -1,0 +1,13 @@
+// @each $val, $space in $spacings {
+//     .spacings--#{$val}{
+//         margin:$space 0;
+//     }
+// }
+
+@each $key, $value in $colors {
+    .bg-#{$key}{
+        background-color: $value;
+    }
+    
+}
+

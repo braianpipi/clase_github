@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactenos para poder dar inico a sus proyectos">
+    <meta name="keywords" content="contacto, servicio, contacto, consulta, divorcio, herencia, bienes, dudas">
+    <title>CONTACTANOS</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family = Source + Sans + Pro & display = swap " rel=" stylesheet ">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <section class="seccionUno">
+            <div class="logoPosition">
+                <a href="../index.html"><img class="logo" src="../Img/LOGOPRINCIPAL.png"
+                        alt="Aqui se encuentra el logo"></a>
+            </div>
+            <div class="logoDosPosition">
+                <img class="logoDos" src="../Img/FONDOHEADDER.png" alt="Aqui se encuentra el logo">
+            </div>
+            <div class="contactoPosition">
+                <a class="contacto" href="../html/contacto.html">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    CONTACTANOS</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="seccionDos">
+            <section class="iconos">
+                <div class="imagenEnlaces">
+                    <a href="../index.html"><img src="../Img/iconoInicioFINAL.png" class="barraNavegacion"
+                            alt="Imagen referencia"></a>
+                    <a href="../html/quienesSomos.html"><img src="../Img/IconosQuienesSomospng.png"
+                            class="barraNavegacion" alt=" Imagen referencia"></a>
+                    <a href="../html/porqueElegirnos.html"><img src="../Img/IconosPorqueElegirnos.png"
+                            class="barraNavegacion" alt="Imagen referencia"></a>
+                    <a href="../html/presupuesto.html"><img src="../Img/IconosPresupuesto.png" class="barraNavegacion"
+                            alt=" Imagen referencia"></a>
+
+                </div>
+            </section>
+        </section>
+
+        <br>
+        <br>
+
+        <section id="contacto">
+            <h2>Dejanos tus datos</h2>
+            <br>
+            <form action="index.js" method="POST">
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" placeholder="Nombres y Apellidos">
+                <br>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="" placeholder="tucorre@correo.com">
+                <br>
+                <br>
+                <h2>Su consulta es</h2>
+                <label for="">Seleccione una seccion</label>
+                <select name="" id="">
+                    <option value="Bienes Raices">Bienes Raices</option>
+                    <option value="Familia">Familia</option>
+                    <option value="facturacion">Facturación</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <br>
+                <br>
+                <div>
+                    <h2>Como nos conocio?</h2>
+                    <h4>Eliga una opcion</h4>
+                    <input type="radio" name="radios" value="Opcion1">
+                    <label for="radioOne">Internet</label>
+                    <br>
+                    <input type="radio" name="radios" value="Opcion2">
+                    <label for="radioOne">Redes, Google</label>
+                    <br>
+                    <input type="radio" name="radios" value="Opcion3">
+                    <label for="radioOne">Contacto</label>
+                    <br>
+                    <input type="radio" name="radios" value="Opcion4">
+                    <label for="radioOne">Publicidad</label>
+                </div>
+                <div>
+                    <h2>El pago lo realizara con</h2>
+                    <h4>Elija una o varias opciones</h4>
+                    <input type="checkbox" name="telefonia" value="telefonia">
+                    <label for="Tarjeta de credito">Tarjeta de Credito</label>
+                    <br>
+                    <input type="checkbox" name="tv" value="tv">
+                    <label for="dolares">Dolares</label>
+                    <br>
+                    <input type="checkbox" name="internet" value="internet">
+                    <label for="Pesos">Pesos</label>
+                    <br>
+                    <input type="checkbox" name="nothing" value="nothing">
+                    <label for="Cheques">Cheque</label>
+                </div>
+                <br>
+                <label for="comment">Dejanos tu consulta:</label>
+                <br>
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Hacenos un breve resumen de tu caso"
+                    maxlength="10"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar informacion a nuestros profesionales">
+                <input type="reset" value="Volver a llenar el formulario">
+                <input type="button" value="Necesito una respuesta rapida">
+            </form>
+        </section>
+
+        <hr>
+        <br>
+        <br>
+
+    </main>
+
+    <footer class="seccionCinco">
+        <div class="logoFooter">
+            <img class="imagenFooter" src="../Img/Logo_Buenos-Aires-Ciudad.png" height="100px" width="200px"
+                alt="Aqui se encuentra el logo">
+        </div>
+        <nav class="contacto contactoFooter">
+            <button onclick="location.href='../html/contacto.html'">CONTACTANOS</button>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
