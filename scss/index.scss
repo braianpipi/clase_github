@@ -19,7 +19,7 @@
         grid-column: 1/13;
         grid-row: 2;
         &__logo{
-
+ 
             }
         &__contacto{
             text-align: right;
@@ -98,6 +98,66 @@
     
 }
 
+.seccionTres{
+    background: #f2f2f2;
+    width: 100%;
+    height: 55em;
+    .contenedorr{
+        .titulo{
+            text-align: center;
+            padding: 30px auto;
+            margin: 30px auto;
+        }
+        .galeria-port{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .imagen-port{
+                width: 49%;
+                height: 400px;
+                margin-bottom: 10px;
+                overflow: hidden;
+                position: relative;
+                cursor:pointer;
+                box-shadow: 0 0 6px rgb(0, 0, 0.5);
+                .hover-galeria{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0%;
+                    transform: scale(0);
+                    background: rgba(69, 64, 73, 0.7);
+                    transition: transform .5s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                .hover-galeria img{
+                    width:50%;
+                }
+                .hover-galeria p{
+                    color: #fff;
+                }
+                
+            }
+            .imagen-port:hover .hover-galeria{
+                    transform: scale(1);
+                }
+            .imagen-port > img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display:block;
+            
+            }
+        }
+
+    }
+
+}
+
+// Propiedades viejo header
 // .seccionUno{
 //     width: 100%;    
 //     display: grid;
@@ -215,35 +275,35 @@
 }
 
 
-.seccionTres{
-    display: grid; 
-    gap: 5px 5px; 
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 400px);
-    &__textoIzquierda{
-        color: white;
-        &__textoBody{    
-        font:oblique;
-        }
-    }
-    &__imagenDerecha{
-    overflow: hidden;
-        &__imagenBodyIndex{
-        height: 400px;
+// .seccionTres{
+//     display: grid; 
+//     gap: 5px 5px; 
+//     grid-template-columns: repeat(2, 1fr); 
+//     grid-template-rows: repeat(2, 400px);
+//     &__textoIzquierda{
+//         color: white;
+//         &__textoBody{    
+//         font:oblique;
+//         }
+//     }
+//     &__imagenDerecha{
+//     overflow: hidden;
+//         &__imagenBodyIndex{
+//         height: 400px;
         
-        }
-        &__imagenBodyIndex:first-of-type {
-        width: 100%;
-        height: auto;
-        }       
-    }
-    &__imagenIzquierda{
-    overflow: hidden;
-    }
-    &__textoDerecha{
-    color: white;        
-    }
-}
+//         }
+//         &__imagenBodyIndex:first-of-type {
+//         width: 100%;
+//         height: auto;
+//         }       
+//     }
+//     &__imagenIzquierda{
+//     overflow: hidden;
+//     }
+//     &__textoDerecha{
+//     color: white;        
+//     }
+// }
 
 .seccionCuatro{
     position:fixed;
