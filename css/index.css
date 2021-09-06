@@ -125,7 +125,12 @@ label {
     grid-row: 3; }
 
 .seccionTres {
-  background: #f2f2f2;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 55em; }
   .seccionTres .contenedorr .titulo {
@@ -199,18 +204,12 @@ label {
     margin: 20px; }
 
 .seccionCinco {
-  padding: 0%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px 5px;
-  background-color: #FFD523;
-  align-items: center; }
-  .seccionCinco__imagenFooter {
-    grid-column: 1 / 3;
-    height: 100px;
-    width: 300px; }
-  .seccionCinco__contactoFooter {
-    grid-column: 4 / 5; }
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .quienesSomosBody {
   display: grid;
@@ -333,3 +332,15 @@ button p {
 .formulario textarea:focus {
   outline: 0;
   border: 1px solid #7ccc1a; }
+
+.error {
+  background-image: url(../Img/404.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  background-size: cover; }
+  .error__texto {
+    color: blanchedalmond;
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center; }
