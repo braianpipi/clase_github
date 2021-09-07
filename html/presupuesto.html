@@ -10,6 +10,8 @@
         content="presupuesto, beines raices, familia, abogado, costo, valor, carata documento, sucesiones, divorcio, herencia">
     <title>Presupuesto</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family = Source + Sans + Pro & display = swap " rel=" stylesheet ">
@@ -18,7 +20,7 @@
 
 
 <body>
-
+    <!-- Aca comienza el Header -->
     <header>
         <section class="seccionUno">
             <div class="seccionUno__waveUno" style=" overflow: hidden;"><svg viewBox="0 0 500 150"
@@ -46,7 +48,7 @@
                 </svg></div>
         </section>
     </header>
-
+    <!-- Aca termina el Header -->
     <main>
 
         <section class="seccionDos">
@@ -64,8 +66,85 @@
         </section>
 
         <h2>PRESUPUESTOS</h2>
+        <section class="presupuestoListas">
+            <ul class="list-group">
+                <li class="list-group-item">Familia</li>
+                <li class="list-group-item list-group-item-dark">Herencia</li>
+                <li class="list-group-item list-group-item-dark">Divorcios</li>
+                <li class="list-group-item list-group-item-dark">Ciudadanias</li>
+                <li class="list-group-item">Inmobiliarias</li>
+                <li class="list-group-item list-group-item-dark">Tasacion</li>
+                <li class="list-group-item list-group-item-dark">Sucesion</li>
+                <li class="list-group-item list-group-item-dark">Bienes Raices</li>
+            </ul>
+        </section>
+        <section class="presupuestoTablas">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <td colspan="3">PRESUPUESTO INMOBILIARIO</td>
+                    </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><=100mt2</th>
+                        <th scope="col">>100mt2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Tasacion</th>
+                        <td>10% Valor total</td>
+                        <td>7% Valor total</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sucecion</th>
+                        <td>20% Valor total</td>
+                        <td rowspan="2">15% Valor total</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bienes Raices</th>
+                        <td colspan="1">17% Valor total</td>
 
-        <section class="listas">
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-dark table-sm">
+                <thead>
+                    <tr>
+                        <td colspan="3">PRESUPUESTO FAMILIA</td>
+                    </tr>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Tramite</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">-</th>
+                        <td>Carta Documento</td>
+                        <td>100$</td>
+                        <!-- <td></td> -->
+                    </tr>
+                    <tr>
+                        <th scope="row">-</th>
+                        <td>Citacion</td>
+                        <td>200$</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">-</th>
+                        <td>Juicio Completo</td>
+                        <td>1200$</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">-</th>
+                        <td colspan="1">Juicio Ganado</td>
+                        <td>21%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- <section class="listas">
             <h3 class="listas__titulo">Listas</h3>
             <ol style="line-break: auto;">
                 <li>
@@ -148,19 +227,29 @@
                 </tbody>
             </table>
         </section>
-
+        <seccion class="tablaPresupuesto">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+        </seccion>
         <section class="seccionCuatro">
             <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <strong class="textoScroll">Es momentos de que nos <a
                         href="../html/contacto.html">CONTACTES</a></strong>
             </div>
-        </section>
+        </section> -->
 
     </main>
-<!-- Aca comienza el Footer -->
+    <!-- Aca comienza el Footer -->
     <footer class="seccionCinco">
         <div>
-            Copyright &reg; 2021-<script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello Abogados - Todos los derechos reservados.
+            Copyright &reg; 2021-
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello Abogados
+            - Todos los derechos reservados.
         </div>
         <nav class="seccionCinco__contactoFooter contacto">
             <button onclick="location.href='html/contacto.html'">CONTACTANOS</button>

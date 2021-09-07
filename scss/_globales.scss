@@ -6,15 +6,12 @@
 
 header{
         background-image: url(../Img/fondoHGrande.png);
-        background-position: bottom;
+        // background-position: bottom;
         background-size: cover;
         background-attachment: fixed;
-        // background-position: center;
+        background-position: center;
         width: 100%;
-        // height: 40em;    
-        // display: grid;
-        // grid-template-columns: repeat(12, 1fr); 
-        // grid-template-rows: 150px 1fr 150px;
+        height: 100%;
         overflow: hidden;
 }
 

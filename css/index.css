@@ -5,10 +5,11 @@
 
 header {
   background-image: url(../Img/fondoHGrande.png);
-  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   width: 100%;
+  height: 100%;
   overflow: hidden; }
 
 body {
@@ -125,15 +126,12 @@ label {
     grid-row: 3; }
 
 .seccionTres {
-  background: #000000;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #eeeeee;
+  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%);
   width: 100%;
   height: 55em; }
-  .seccionTres .contenedorr .titulo {
+  .seccionTres .contenedorr .tituloIndex {
+    color: blanchedalmond;
     text-align: center;
     padding: 30px auto;
     margin: 30px auto; }
@@ -175,15 +173,15 @@ label {
 
 .seccionDos {
   background-color: #250707;
-  margin: 10px auto;
-  padding: 20px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
   .seccionDos__imagenEnlaces {
-    object-fit: cover; }
+    object-fit: cover;
+    flex-wrap: wrap; }
     .seccionDos__imagenEnlaces__navegacion {
-      height: 200px;
+      height: 300px;
       width: 24.5%;
       border-radius: 1.5em; }
     .seccionDos__imagenEnlaces__navegacion:hover {
@@ -204,12 +202,8 @@ label {
     margin: 20px; }
 
 .seccionCinco {
-  background: #000000;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background: #eeeeee;
+  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%); }
 
 .quienesSomosBody {
   display: grid;
@@ -344,3 +338,17 @@ button p {
     font-size: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center; }
+
+@media only screen and (max-width: 768px) {
+  .seccionDos__imagenEnlaces__navegacion {
+    width: 49%; }
+  header {
+    background-image: url(../Img/fondoheaderresponsive.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  .seccionUno__elementos {
+    justify-content: center; } }
