@@ -1,6 +1,6 @@
 * {
   margin: 0 0 0 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: inherit; }
 
 header {
@@ -15,7 +15,14 @@ header {
   object-fit: cover; }
 
 body {
+  margin: 3px auto;
   background-image: url(../Img/fondo.png); }
+
+footer {
+  background: #eeeeee;
+  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%);
+  width: 100%;
+  padding: 50px 0px; }
 
 table {
   background-color: #3a5eb1; }
@@ -32,6 +39,7 @@ h3 {
   color: #0e0e0e; }
 
 p {
+  font-family: 'Oswald', sans-serif;
   font-size: 35px;
   color: #0e0e0e; }
 
@@ -41,6 +49,51 @@ span {
 label {
   display: block;
   float: center; }
+
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212721;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px; }
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #212721;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px; }
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #22863b;
+  border-color: #22863b;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer; }
+
+button p {
+  color: #fff; }
+
+a {
+  text-decoration: none; }
 
 .bg-normal {
   background-color: #7219; }
@@ -70,6 +123,7 @@ label {
     .seccionUno__elementos__contacto {
       text-align: right; }
       .seccionUno__elementos__contacto .contacto {
+        font-family: 'Oswald', sans-serif;
         color: black;
         letter-spacing: 6px;
         font-size: 30px;
@@ -174,6 +228,7 @@ label {
     text-align: center;
     margin: auto; }
   .seccionTres .contenedorr .galeria-port {
+    margin: 1%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
@@ -210,22 +265,64 @@ label {
       display: block; }
 
 .seccionCuatro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 10rem;
   position: fixed;
-  top: 92%;
-  left: 55%;
-  border: ridge;
-  background-color: #F0F1FD;
-  border-radius: 1.5em;
-  color: AF96FF;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .seccionCuatro__textoScroll {
-    border-bottom: black solid 2px;
-    margin: 20px; }
+  top: 70%;
+  left: 60%; }
+  .seccionCuatro .burbuja {
+    background-color: #F0F1FD;
+    border-radius: 1.5em;
+    color: #070707; }
+    .seccionCuatro .burbuja__textoScroll {
+      margin: 1%;
+      font-size: 1em;
+      text-align: center;
+      font-family: 'Oswald', sans-serif; }
 
-.seccionCinco {
-  background: #eeeeee;
-  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%); }
+.seccionCinco .contenedorFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px; }
+  .seccionCinco .contenedorFooter__boxFooter {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 25px 25px; }
+    .seccionCinco .contenedorFooter__boxFooter h2 {
+      font-weight: 500;
+      font-size: 30px;
+      color: #afadad;
+      font-family: 'Oswald', sans-serif;
+      margin-bottom: 30px;
+      font-weight: 700; }
+    .seccionCinco .contenedorFooter__boxFooter a {
+      background-color: black;
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      margin-top: 10px;
+      font-weight: 600; }
+    .seccionCinco .contenedorFooter__boxFooter a:hover {
+      opacity: 0.8;
+      transform: scale(1.2, 1.2); }
+    .seccionCinco .contenedorFooter__boxFooter .logoFooter {
+      width: 200px; }
+
+.seccionCinco .contenedorMapa {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.seccionCinco .contenedorDerechos {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px; }
 
 .quienesSomosBody {
   display: grid;
@@ -288,48 +385,6 @@ label {
   padding-bottom: 20px;
   background-color: #fbfbfb;
   padding-left: 30px; }
-
-input {
-  background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #212721;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px; }
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #212721;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px; }
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #22863b;
-  border-color: #22863b;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer; }
-
-button p {
-  color: #fff; }
 
 .aviso {
   font-size: 13px;

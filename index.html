@@ -48,7 +48,7 @@
                     preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M-12.69,55.75 C149.99,150.00 368.22,-79.44 543.16,91.28 L500.00,150.00 L0.00,150.00 Z"
                         style="stroke: none; fill: rgb(139, 129, 129);"></path>
-                        
+
                 </svg></div>
         </section>
     </header>
@@ -56,6 +56,7 @@
 
     <!-- Aca comienza el Main -->
     <main>
+        <!-- Aca comienza la seccion Dos barra de navegacion -->
         <section class="seccionDos">
             <div class="seccionDos__imagenEnlaces">
                 <div class="seccionDos__imagenEnlaces__navegacion">
@@ -76,6 +77,9 @@
                 </div>
             </div>
         </section>
+        <!-- Aca termina la seccion Dos barra de navegacion -->
+
+        <!-- Aca comienza la seccion Tres imagenes del Index -->
         <section class="seccionTres">
             <div class="contenedorr">
                 <h2 class="tituloIndex">UN COMPROMISO CON LA LEY.</h2>
@@ -111,53 +115,55 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="seccionTres">
-            <div class="seccionTres__textoIzquierda">
-                <p class="seccionTres__textoIzquierda__textoBody">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Ullam quisquam quod
-                    numquam
-                    repudiandae
-                    incidunt excepturi ipsa iure, deserunt inventore nulla, voluptatum iusto, provident officiis vitae
-                    vel. Iusto in quos praesentium!</p>
-            </div>
-            <div class="seccionTres__imagenDerecha">
-                <img class="seccionTres__imagenDerecha__imagenBodyIndex" src="Img/imagen body.jpeg"
-                    alt="Imagen referencia">
-            </div>
-            <div class="seccionTres__imagenIzquierda">
-                <img class="seccionTres__imagenIzquierda__imagenBodyIndex" src="Img/imagen vody 2.jpeg"
-                    alt="Imagen referencia">
-            </div>
-            <div class="seccionTres__textoDerecha">
-                <p class="seccionTres__textoDerecha__textoBody">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit nesciunt saepe illum modi
-                    consequuntur
-                    libero hic fuga officia quidem! Consectetur quod voluptatibus exercitationem incidunt nesciunt ab
-                    obcaecati accusantium voluptas expedita!</p>
-            </div>
+        <!-- Aca comienza la seccion Tres imagenes en el Index -->
 
-        </section> -->
-        <section class="seccionCuatro">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <strong class="SeccionCuatro__textoScroll">Para mas informacion<a href="html/quienesSomos.html">
-                        ENTERATE DE QUIENES
-                        SOMOS</a></strong>
+        <!-- Aca comienza la seccion Cuatro el Scroll en pantalla -->
+        <!-- <section class="seccionCuatro">
+            <div class="burbuja" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <p class="burbuja__textoScroll">Para mas informacion
+                    <a href="html/quienesSomos.html">
+                        ENTERATE DE QUIENES SOMOS</a>
+                </p>
             </div>
-        </section>
+        </section> -->
+        <!-- Aca termina seccion Cuatro el Scroll en pantalla -->
     </main>
     <!-- Aca termina el Main -->
 
     <!-- Aca comienza el Footer -->
     <footer class="seccionCinco">
-        <div>
+        <div class="contenedorFooter">
+            <div class="contenedorFooter__boxFooter">
+                <div class="logoFooter">
+                    <img src="img/Frame.png" alt="" class="logoFooter">
+                </div>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Quienes Somos</h2>
+                <a href="clase01/html/quienesSomos.html" class="enlacesFooter">Enterate Quienes Somos!</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Porque Elegirnos?</h2>
+                <a href="clase01/html/porqueElegirnos.html" class="enlacesFooter">Te explicamos porque
+                    elegirnos!</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Presupuesto</h2>
+                <a href="html/presupuesto.html" class="enlacesFooter">Los mejores Presupuestos</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Contactanos</h2>
+                <a href="html/contacto.html" class="enlacesFooter">No pierdas tiempo, Contactanos!</a>
+            </div>
+
+        </div>
+        <hr>
+        <div class="contenedorDerechos">
             Copyright &reg; 2021-
-            <script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello Abogados
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello
+            Abogados
             - Todos los derechos reservados.
         </div>
-        <nav class="seccionCinco__contactoFooter contacto">
-            <button onclick="location.href='html/contacto.html'">CONTACTANOS</button>
-        </nav>
-
     </footer>
     <!-- Aca termina el Footer -->
 
@@ -165,10 +171,6 @@
     <script>
         AOS.init();
     </script>
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script> -->
 </body>
 
 </html>

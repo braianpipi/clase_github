@@ -23,6 +23,7 @@
             text-align: right;
 
             .contacto{
+                font-family: 'Oswald', sans-serif;
                 color: rgb(0, 0, 0);
                 letter-spacing: 6px;
                 font-size: 30px;
@@ -153,6 +154,7 @@
             margin: auto;
         }
         .galeria-port{
+            margin: 1%;
             display:flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -202,24 +204,84 @@
 }
 
 .seccionCuatro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    width: 10rem;
     position:fixed;
-    top: 92%;
-    left: 55%;
-    border:ridge;
-    background-color: #F0F1FD;
-    border-radius:1.5em;  
-    color: AF96FF;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 70%;
+    left: 60%;
+
+        .burbuja{
+        // border:ridge;
+        background-color: #F0F1FD;
+        border-radius:1.5em;  
+        color: rgb(7, 7, 7);
+        // width: 100%;
+        // height: 100%;        
+        
         &__textoScroll{
-        border-bottom: rgb(0, 0, 0) solid 2px;
-        margin: 20px; 
-        }
+        // width: 100%;
+        // height: 100%;
+        margin: 1%;
+        font-size: 1em;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;}
+    }    
 }
 
 .seccionCinco{
-    background: rgb(238,238,238);
-    background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(1,1,3,1) 87%, rgba(1,1,1,1) 94%, rgba(2,0,36,1) 100%);
+    .contenedorFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+
+        &__boxFooter{
+            display: flex;
+            flex-direction: column;
+            padding: 25px 25px 25px 25px;
+            h2{                
+                font-weight: 500;
+                font-size: 30px;               
+                color: rgb(175, 173, 173);
+                font-family: 'Oswald', sans-serif;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            a{  
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                font-family: 'Oswald', sans-serif;
+                margin-top: 10px;
+                font-weight: 600;
+            }
+            a:hover {
+                opacity: 0.8;
+                transform: scale(1.20,1.20);
+            }
+            .logoFooter{
+                width: 200px;
+
+            }
+        }
+    }
+    .contenedorMapa{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .contenedorDerechos{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+
+    }
+    
 }
 // Quienes Somos scss
 
@@ -314,54 +376,7 @@
     background-color: #fbfbfb; 
     padding-left: 30px; 
   }
-  
-  
-input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #212721; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #212721; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }  
-  
-button{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #22863b; 
-    border-color: #22863b; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-button p{
-    color: #fff; 
-  }
-  
+   
 .aviso{
     font-size: 13px;  
     color: #0e0e0e;  
