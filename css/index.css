@@ -11,7 +11,8 @@ header {
   background-position: center;
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  object-fit: cover; }
 
 body {
   background-image: url(../Img/fondo.png); }
@@ -31,7 +32,7 @@ h3 {
   color: #0e0e0e; }
 
 p {
-  font-size: 14px;
+  font-size: 35px;
   color: #0e0e0e; }
 
 span {
@@ -70,11 +71,12 @@ label {
       text-align: right; }
       .seccionUno__elementos__contacto .contacto {
         color: black;
-        letter-spacing: 4px;
-        font-size: 24px;
+        letter-spacing: 6px;
+        font-size: 30px;
         text-decoration: none;
         text-align: center;
-        transition: 0.2s; }
+        transition: 0.2s;
+        font-weight: bold; }
       .seccionUno__elementos__contacto .contacto:hover {
         background: #79c745;
         box-shadow: 0 0 10px #79c745, 0 0 40px #79c745, 0 0 80px #79c745;
@@ -127,9 +129,9 @@ label {
     grid-row: 3; }
 
 .seccionDos {
-  background-color: #250707;
-  margin: 2% auto;
-  padding: 2% auto;
+  background: #eeeeee;
+  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%);
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -163,12 +165,14 @@ label {
   background: #eeeeee;
   background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%);
   width: 100%;
-  height: 55em; }
+  height: 60em; }
   .seccionTres .contenedorr .tituloIndex {
+    letter-spacing: 10px;
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
     color: blanchedalmond;
     text-align: center;
-    padding: 30px auto;
-    margin: 30px auto; }
+    margin: auto; }
   .seccionTres .contenedorr .galeria-port {
     display: flex;
     justify-content: space-between;
@@ -194,7 +198,7 @@ label {
         align-items: center;
         flex-direction: column; }
       .seccionTres .contenedorr .galeria-port .imagen-port .hover-galeria img {
-        width: 50%; }
+        width: 60%; }
       .seccionTres .contenedorr .galeria-port .imagen-port .hover-galeria p {
         color: #fff; }
     .seccionTres .contenedorr .galeria-port .imagen-port:hover .hover-galeria {
