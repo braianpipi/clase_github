@@ -51,22 +51,30 @@
     <!-- Aca termina el Header -->
     <!-- Aca comienza el Main -->
     <main>
+        <!-- Aca comienza seccion Dos Barra de Navegacion -->
         <section class="seccionDos">
-            <section>
-                <div class="seccionDos__imagenEnlaces">
-                    <a href="../index.html"><img src="../Img/iconoInicioFINAL.png"
-                            class="seccionDos__imagenEnlaces__navegacion" alt="Imagen referencia"></a>
-                    <a href="../html/porqueElegirnos.html"><img src="../Img/IconosPorqueElegirnos.png"
-                            class="seccionDos__imagenEnlaces__navegacion" alt=" Imagen referencia"></a>
-                    <a href="../html/presupuesto.html"><img src="../Img/IconosPresupuesto.png"
-                            class="seccionDos__imagenEnlaces__navegacion" alt="Imagen referencia"></a>
-                    <a href="../html/contacto.html"><img src="../Img/Iconos Contactanos.png"
-                            class="seccionDos__imagenEnlaces__navegacion" alt=" Imagen referencia"></a>
-
+            <div class="seccionDos__imagenEnlaces">
+                <div class="seccionDos__imagenEnlaces__navegacion">
+                    <a href="../index.html"><img class="imagenNavegacion" src="../Img/iconoInicioFINAL.png"
+                            alt="Imagen referencia navegacion al index"></a>
                 </div>
-            </section>
+                <div class="seccionDos__imagenEnlaces__navegacion">
+                    <a href="../html/porqueElegirnos.html"><img class="imagenNavegacion"
+                            src="../Img/IconosPorqueElegirnos.png" alt="Imagen referencia navegacion Porque Elegirnos"></a>
+                </div>
+                <div class="seccionDos__imagenEnlaces__navegacion">
+                    <a href="../html/presupuesto.html"><img class="imagenNavegacion" src="../Img/IconosPresupuesto.png"
+                            alt="Imagen referencia navegacion Presupuesto"></a>
+                </div>
+                <div class="seccionDos__imagenEnlaces__navegacion">
+                    <a href="../html/contacto.html"><img class="imagenNavegacion" src="../Img/Iconos Contactanos.png"
+                            alt="Imagen referencia navegacion Contactanos"></a>
+                </div>
+            </div>
         </section>
+        <!-- Aca termina seccion Dos Barra de Navegacion -->
 
+        <!-- Aca comienza seccion Fundamentos de Quienes Somos -->
         <section class="quienesSomosBody">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -189,28 +197,48 @@
                 </p>
             </div>
         </section>
+        <!-- Aca termina seccion Fundamentos de Quienes Somos -->
 
-        <section class="seccionCuatro">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <strong class="textoScroll">Seria muy bueno que sepas <a href="../html/porqueElegirnos.html"> PORQUE
-                        ELEGIRNOS</a></strong>
-            </div>
-        </section>
     </main>
     <!-- Aca termina el Main -->
+
     <!-- Aca comienza el Footer -->
     <footer class="seccionCinco">
-        <div>
+        <div class="contenedorFooter">
+            <div class="contenedorFooter__boxFooter">
+                <div class="logoFooter">
+                    <img src="../img/Frame.png" alt="" class="logoFooter">
+                </div>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Quienes Somos</h2>
+                <a href="../html/quienesSomos.html" class="enlacesFooter">Enterate Quienes Somos!</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Porque Elegirnos?</h2>
+                <a href="../html/porqueElegirnos.html" class="enlacesFooter">Te explicamos porque
+                    elegirnos!</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Presupuesto</h2>
+                <a href="../html/presupuesto.html" class="enlacesFooter">Los mejores Presupuestos</a>
+            </div>
+            <div class="contenedorFooter__boxFooter">
+                <h2>Contactanos</h2>
+                <a href="../html/contacto.html" class="enlacesFooter">No pierdas tiempo, Contactanos!</a>
+            </div>
+
+        </div>
+        <hr>
+        <div class="contenedorDerechos">
             Copyright &reg; 2021-
-            <script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello Abogados
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> Estudio Arguello
+            Abogados
             - Todos los derechos reservados.
         </div>
-        <nav class="seccionCinco__contactoFooter contacto">
-            <button onclick="location.href='html/contacto.html'">CONTACTANOS</button>
-        </nav>
-
     </footer>
-    <!-- Aca termina el FOOTER -->
+    <!-- Aca termina el Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
         crossorigin="anonymous"></script>
@@ -223,6 +251,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>    
+    </script>
 </body>
+
 </html>

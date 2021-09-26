@@ -226,7 +226,8 @@ a {
     font-family: 'Oswald', sans-serif;
     color: blanchedalmond;
     text-align: center;
-    margin: auto; }
+    margin: auto;
+    max-width: 100%; }
   .seccionTres .contenedorr .galeria-port {
     margin: 1%;
     display: flex;
@@ -296,11 +297,15 @@ a {
     .seccionCinco .contenedorFooter__boxFooter h2 {
       font-weight: 500;
       font-size: 30px;
-      color: #afadad;
+      color: black;
       font-family: 'Oswald', sans-serif;
       margin-bottom: 30px;
       font-weight: 700; }
+    .seccionCinco .contenedorFooter__boxFooter h2:hover {
+      transform: scale(1.2, 1.2);
+      color: snow; }
     .seccionCinco .contenedorFooter__boxFooter a {
+      text-decoration: none;
       background-color: black;
       color: white;
       font-family: 'Oswald', sans-serif;
