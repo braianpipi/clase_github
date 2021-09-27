@@ -301,14 +301,6 @@
     width: 100%;
     height: 25rem;
     }
-    &__textoQuienesUno{
-        font-size: 2em;
-        color: white;
-    }
-    &__textoQuienesDos{
-            font-size: 2em;
-            color: white;
-        }
     &__textoQuienestres{
         padding: 10px;
         width: 100%;
@@ -335,9 +327,12 @@
 }
 
 .quienesCarousel{
+    padding: 20px auto;
     height: 30em;
 }
-
+.textoCarrousel{
+    color: #fbfbfb;
+}
 .imagenCard{
     height: 300px;
     border-radius: 100%;
