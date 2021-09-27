@@ -39,6 +39,7 @@ h3 {
   color: #0e0e0e; }
 
 p {
+  padding: 5px auto;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
   color: #0e0e0e; }
@@ -189,7 +190,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 20%;
+  height: 30%;
   justify-content: space-around;
   align-content: space-around; }
   .seccionDos__imagenEnlaces {
@@ -330,6 +331,8 @@ a {
   padding: 0px 40px; }
 
 .quienesSomosBody {
+  background: #eeeeee;
+  background: linear-gradient(90deg, #eeeeee 0%, #010103 87%, #010101 94%, #020024 100%);
   display: grid;
   grid-column: repeat(1, 2em); }
   .quienesSomosBody__imagenQuienesUno {
@@ -342,13 +345,16 @@ a {
     font-size: 2em;
     color: white; }
   .quienesSomosBody__textoQuienestres {
-    color: white;
-    font-size: 3em;
-    font-style: oblique;
-    font-variant: small-caps;
-    text-align: justify;
-    text-indent: 10%;
-    letter-spacing: 1px; }
+    padding: 10px;
+    width: 100%; }
+    .quienesSomosBody__textoQuienestres .textoQuienesSomos {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2em;
+      font-style: oblique;
+      text-indent: 3%;
+      letter-spacing: 1px;
+      color: white;
+      text-align: center; }
   .quienesSomosBody__imagenQuienesDos {
     width: 50%;
     height: 30rem; }
