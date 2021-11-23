@@ -22,7 +22,7 @@ message.isValid = () => !!message.value;
 
 
 const inputFields = [nombre, email, subject, message];
-// console.log(inputFields)
+
 
 
 const validEmail = (email) => {
