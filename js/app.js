@@ -1,69 +1,33 @@
-// let botonEnviar = document.querySelector("#enviar");
-
-// botonEnviar.addEventListener("click", formularioSaludo);
-
-// function formularioSaludo(e){
-//     document.getElementById("formulario").reset();
-//     alert("Muchas Gracias por llenar el Formulario, en breves nos pondremos en contacto!")
-// }
-
-const form = document.getElementById("form");
-const nombre = document.getElementById("nombre");
-const email = document.getElementById("email");
-const subject = document.getElementById("subject");
-const message = document.getElementById("message");
-
-
-nombre.isValid = () => !!nombre.value;
-
-email.isValid = () => validEmail(email.value);
-subject.isValid = () => !!subject.value;
-message.isValid = () => !!message.value;
-
-
-const inputFields = [nombre, email, subject, message];
-
-
-
-const validEmail = (email) => {
-
-  const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-  return emailRegex.test(String(email).toLocaleLowerCase());
-
-};
-
-let shouldValidate = false;
-let isFormValid = false;
-
-
-const inputCheck = function(){
-
-    if (!shouldValidate) return;
-
-    isFormValid = true;
-
-    inputFields.forEach((input) => {
-      input.classList.remove("invalid");
-      input.nextElementSibling.classList.add("hide");
-
-      if (!input.isValid()) {
-        input.classList.add("invalid");
-        isFormValid = false;
-        input.nextElementSibling.classList.remove("hide");
-      }
-    });
-
-}
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  shouldValidate = true;
-  inputCheck();
-  if (isFormValid) {
-    alert("Gracias por comunicarse, en breve responderemos a su consulta.")
-    location.href ="index.html";
+function validate(){
+    var name = document.getElementById("name").value;
+    var subject = document.getElementById("subject").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
+    
+    error_message.style.padding = "10px";
+    
+    var text;
+    if(name.length < 3){
+      text = "Por favor ingrese nombre valido";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(subject.length < 4){
+      text = "Por favor ingrese subject correcto";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(email.indexOf("@") == -1 || email.length < 6){
+      text = "Por favor ingrese un email valido";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(message.length <= 60){
+      text = "Por favor ingrese mas de 60 caracteres en su mensaje";
+      error_message.innerHTML = text;
+      return false;
+    }
+    alert("Formulario enviado con exito!");
+    return true;
   }
-});
-
-inputFields.forEach((input) => input.addEventListener("input", inputCheck));

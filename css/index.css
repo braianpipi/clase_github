@@ -432,6 +432,8 @@ a {
   border: 1px solid #7ccc1a; }
 
 .error {
+  visibility: visible;
+  color: #C20000;
   background-image: url(../Img/404.jpg);
   width: 100%;
   height: 100%;
@@ -442,6 +444,9 @@ a {
     font-size: 100%;
     font-family: Georgia, "Times New Roman", Times, serif;
     text-align: center; }
+
+.hide {
+  opacity: 0; }
 
 @media only screen and (max-width: 768px) {
   .seccionDos__imagenEnlaces__navegacion {
